@@ -1,2 +1,0 @@
-ok Criar uma rota "/url"
-ok Criar um método "add_url" que recebe uma URL via request body
