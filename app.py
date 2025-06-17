@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -6,5 +6,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<p>Hello</p>"
+    return jsonify({'name': 'Pedro'})
 
+@app.route("/url", methods=['POST'])
+def add_url():
+    data = request.get_json()
+    url = data['url']
+    return jsonify(url)

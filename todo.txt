@@ -1,1 +1,2 @@
-Criar uma rota "/url" que recebe uma URL via corpo de uma requisição POST
+ok Criar uma rota "/url"
+ok Criar um método "add_url" que recebe uma URL via request body
