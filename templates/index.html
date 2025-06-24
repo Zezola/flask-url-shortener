@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{%block title%} Welcome to URL Shortener{%endblock%}</h1>
+    <form method="POST">
+        <div>
+            <label for="url">URL</label>
+            <input type="text" name="url" placeholder="URL to shorten" value="{{request.form['url']}}"></input>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+{% endblock %}
